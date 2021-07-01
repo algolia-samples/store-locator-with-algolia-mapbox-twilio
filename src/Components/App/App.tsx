@@ -5,22 +5,26 @@ import {InstantSearch, Hits, Configure, RefinementList} from 'react-instantsearc
 import {indexName, searchClient} from "../../lib/algoliaClient";
 import {GeoHit} from "../../types/StoreHit";
 import StoreComponent from "../StoreComponent/StoreComponent";
+import Header from "../Header/Header";
 
 
 function App() {
   return (
     <div className="flex w-full h-full flex-col">
 
-      <header className="flex w-full">
-        <Logo className={'w-2/10'} />
-      </header>
+      <Header/>
 
       <InstantSearch searchClient={searchClient} indexName={indexName}>
-        <div className={'flex h-full w-full bg-red-50'}>
-          <div className={'flex flex-col w-1/4 bg-blue-50'}>
+        <Configure aroundLatLngViaIP={true} />
+        <div className={'flex h-full w-full'}>
+          <div className={'flex flex-col w-1/4'}>
+            <div>
+              <RefinementList attribute={'services'}/>
+            </div>
+
             <Hits<GeoHit> hitComponent={hit => <StoreComponent store={hit.hit} onClick={() => {}} currentStore={null}  key={hit.hit.objectID}/>}/>
           </div>
-          <div className={'flex flex-col w-full bg-green-50'}>
+          <div className={'flex flex-col w-full'}>
 
           </div>
         </div>
