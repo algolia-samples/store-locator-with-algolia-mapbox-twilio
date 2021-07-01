@@ -1,40 +1,38 @@
 //import { comparePosition } from '../lib';
 //import { ReactComponent as ShopCenter } from '../assets/shop-center.svg';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {GeoHit} from "../../types/StoreHit";
 
 const StoreComponent = ({
-                          hit,
+                          store,
                           onClick,
-                          //currentStore,
+                          currentStore,
                         }: {
-  hit: Record<string, any>;
+  store: GeoHit;
   onClick: (object: Record<string, any>) => void;
-  //currentStore: [number, number] | null;
+  currentStore?: GeoHit | null;
 }): JSX.Element => {
 
+  const [isSelected, setSelected] = useState(false)
 
-  const { _geoloc } = hit;
-  const position: [number, number] = [_geoloc.lng, _geoloc.lat];
+  useEffect(() => {
+    setSelected(currentStore?.objectID == store.objectID)
+  }, [currentStore])
 
-  ///*`${
-  //         comparePosition(position, currentStore)
-  //           ? 'bg-purple-100 ring ring-purple-800'
-  //           : 'bg-white'
-  //       */
 
   return (
     <article
-      className={`overflow-hidden shadow-lg rounded-lg m-0 cursor-pointer hover:bg-gray-100 m-1 p-4 py-0 flex`}
-      onClick={() => onClick(hit)}
+      className={`${isSelected ? 'bg-purple-100 hover:bg-purple-50 ring ring-purple-800' : } overflow-hidden shadow-lg rounded-lg m-0 cursor-pointer  m-1 p-4 py-0 flex`}
+      onClick={() => onClick(store)}
     >
       {/*<ShopCenter className={'w-8 stroke-current text-purple-800'} />*/}
       <div className="sm:p-6">
-        <h2 className={'font-medium text-lg'}>{hit.name}</h2>
+        <h2 className={'font-medium text-lg'}>{store.name}</h2>
         <p className={'font-normal text-sm'}>
-          {hit.city} {hit.country}
+          {store.city} {store.country}
         </p>
         <div className={'flex gap-2 my-2 flex-wrap'}>
-          {hit.services.map((service: string, key: number) => (
+          {store.services.map((service: string, key: number) => (
             <span
               key={`${service}-${key}`}
               className={

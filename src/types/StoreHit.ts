@@ -3,5 +3,6 @@ export type GeoHit = {
   city: string;
   country: string;
   services: string[];
+  objectID: string
   _geoloc: { lat: number; lng: number };
 };
