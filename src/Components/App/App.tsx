@@ -7,6 +7,7 @@ import {GeoHit} from "../../types/StoreHit";
 import StoreComponent from "../StoreComponent/StoreComponent";
 import Header from "../Header/Header";
 import Map from "../Map/Map"
+import {LngLat} from "../../types/LngLat";
 
 
 function App() {
@@ -20,7 +21,11 @@ function App() {
       <Header/>
 
       <InstantSearch searchClient={searchClient} indexName={indexName}>
-        <Configure aroundLatLngViaIP={currentStore ? false : true} />
+        <Configure
+          aroundLatLngViaIP={!currentStore}
+          aroundLatLng={currentStore ? `${currentStore._geoloc.lng},${currentStore._geoloc.lat}` : ''}
+          analytics={true}
+        />
         <div className={'flex h-full w-full'}>
           <div className={'flex flex-col w-1/4'}>
             <div className={'m-2'}>
@@ -30,7 +35,7 @@ function App() {
             <Hits<GeoHit> hitComponent={hit => <StoreComponent store={hit.hit} onClick={(store) => setCurrentStore(store)} currentStore={currentStore}  key={hit.hit.objectID}/>}/>
           </div>
           <div className={'flex flex-col w-full'}>
-            <Map currentStore={currentStore} onClickMarker={(store) => {}}/>
+            <Map currentStore={currentStore ? [currentStore._geoloc.lng, currentStore._geoloc.lat] : null} onClickMarker={(storeCoordinate => {})}/>
           </div>
         </div>
       </InstantSearch>
