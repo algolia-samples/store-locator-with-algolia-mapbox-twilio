@@ -20,7 +20,7 @@ function App() {
       <Header/>
 
       <InstantSearch searchClient={searchClient} indexName={indexName}>
-        <Configure aroundLatLngViaIP={true} />
+        <Configure aroundLatLngViaIP={currentStore ? false : true} />
         <div className={'flex h-full w-full'}>
           <div className={'flex flex-col w-1/4'}>
             <div className={'m-2'}>
