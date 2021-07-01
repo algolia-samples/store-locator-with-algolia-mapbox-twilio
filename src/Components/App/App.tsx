@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ReactComponent as Logo} from '../../assets/logo.svg'
 import './App.css';
 import {InstantSearch, Hits, Configure, RefinementList} from 'react-instantsearch-dom'
@@ -9,6 +9,10 @@ import Header from "../Header/Header";
 
 
 function App() {
+
+  const [currentStore, setCurrentStore] = useState<GeoHit | null>(null)
+
+
   return (
     <div className="flex w-full h-full flex-col">
 
@@ -18,11 +22,11 @@ function App() {
         <Configure aroundLatLngViaIP={true} />
         <div className={'flex h-full w-full'}>
           <div className={'flex flex-col w-1/4'}>
-            <div>
+            <div className={'m-2'}>
               <RefinementList attribute={'services'}/>
             </div>
 
-            <Hits<GeoHit> hitComponent={hit => <StoreComponent store={hit.hit} onClick={() => {}} currentStore={null}  key={hit.hit.objectID}/>}/>
+            <Hits<GeoHit> hitComponent={hit => <StoreComponent store={hit.hit} onClick={(store) => setCurrentStore(store)} currentStore={currentStore}  key={hit.hit.objectID}/>}/>
           </div>
           <div className={'flex flex-col w-full'}>
 

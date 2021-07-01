@@ -9,7 +9,7 @@ const StoreComponent = ({
                           currentStore,
                         }: {
   store: GeoHit;
-  onClick: (object: Record<string, any>) => void;
+  onClick: (store: GeoHit) => void;
   currentStore?: GeoHit | null;
 }): JSX.Element => {
 
