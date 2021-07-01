@@ -30,7 +30,7 @@ function App() {
             <Hits<GeoHit> hitComponent={hit => <StoreComponent store={hit.hit} onClick={(store) => setCurrentStore(store)} currentStore={currentStore}  key={hit.hit.objectID}/>}/>
           </div>
           <div className={'flex flex-col w-full'}>
-            <Map/>
+            <Map currentStore={currentStore} onClickMarker={(store) => {}}/>
           </div>
         </div>
       </InstantSearch>
