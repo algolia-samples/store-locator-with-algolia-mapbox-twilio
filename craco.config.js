@@ -6,5 +6,10 @@ module.exports = {
         require('autoprefixer'),
       ]
     }
-  }
+  },
+  babel: {
+    loaderOptions: {
+      ignore: ['./node_modules/mapbox-gl/dist/mapbox-gl.js'],
+    },
+  },
 }
