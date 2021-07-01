@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactMapboxGl, { ZoomControl, Marker } from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import {connectGeoSearch} from 'react-instantsearch-dom'
+import {Map} from 'mapbox-gl';
 import {GeoSearchProvided} from 'react-instantsearch-core'
 import {GeoHit} from "../../types/StoreHit";
 import {ReactComponent as MakerImage} from "../../assets/marker.svg";
@@ -21,9 +22,10 @@ interface MapState {
   lat: number,
   lng: number,
   zoom: number,
-  markers: [number, number][],
+  markers: GeoHit[],
   currentStore: GeoHit | null
-  isUserInteraction: boolean
+  isUserInteraction: boolean,
+  userInteractionEnabled: boolean
 }
 
 
@@ -38,39 +40,25 @@ class MapComponent extends Component<GeoSearchProvided & MapProps, MapState> {
     markers: [],
     currentStore: this.props.currentStore,
     isUserInteraction: false,
-  }
-
-  componentWillReceiveProps(nextProps: Readonly<GeoSearchProvided & MapProps>) {
-
-    const {hits, currentStore} = nextProps;
-
-    if(hits.length && hits !== this.props.hits) {
-      // Update markers
-
-      const markers: [number, number][] = hits.map((hit: GeoHit) => {
-        const { _geoloc } = hit;
-        return [_geoloc.lng, _geoloc.lat];
-      })
-
-      // Update center of map based on the 1st marker
-      this.setState({markers}, () => {
-        this.centerMapOnCoordinates(this.state.markers[0]);
-      });
-
-
-    }
-
+    userInteractionEnabled: true
   }
 
 
 
-  centerMapOnCoordinates(coordinates: [number, number]) {
+
+
+
+  centerMapMarker(marker: GeoHit) {
+    // This is added to avoid infinite loop
     if (!this.state.isUserInteraction) {
+      //The refine method is provided by the connectGeoSearch HOC
       const { refine } = this.props;
       this.setState({ isUserInteraction: true }, () => {
+        const { _geoloc } = marker
+        // Center the map on marker given as argument
         this.map.flyTo({
           essential: false,
-          center: [coordinates[0], coordinates[1]],
+          center: [_geoloc.lat, _geoloc.lng],
           zoom: 7,
         });
 
@@ -96,18 +84,10 @@ class MapComponent extends Component<GeoSearchProvided & MapProps, MapState> {
             position: 'relative',
             display: 'block',
           }}
-          onClick={() => {}}
           onMoveEnd={() => {}}
           onZoomEnd={() => {}}
         >
-          <>
-            {
-              this.state.markers.map((marker: [number, number]) => {
-                return <Marker coordinates={marker} key={marker.join('..')}><MakerImage/></Marker>
-              })
-            }
             <ZoomControl position={'bottom-right'} />
-          </>
         </ReactMap>
       </div>
     )
