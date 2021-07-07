@@ -2,6 +2,35 @@
 # yarn lockfile v1
 
 
+"@algolia/autocomplete-core@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-core/-/autocomplete-core-1.2.0.tgz#a908c39cdcb140f0a796123e78ef4039a3b6b14a"
+  integrity sha512-irJ8clS35l3xhYhtdIa/gqYV6gVC5//O/9vFlkAa2YUR8PS8EkNt1RnfbQ1guCSTaK5OAz4cYrfPR9S57t1TBA==
+  dependencies:
+    "@algolia/autocomplete-shared" "1.2.0"
+
+"@algolia/autocomplete-js@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-js/-/autocomplete-js-1.2.0.tgz#78246f76463c2d7b79f905272432bd2a6a8bcc49"
+  integrity sha512-OjPWGjjKs0brdYhBYPq+Qg71sXRIOFCjTruBDJspEb/0GNLZGB1gRKVWmWbpuZd+XDRSqFDpJnew6H1U/sOyaQ==
+  dependencies:
+    "@algolia/autocomplete-core" "1.2.0"
+    "@algolia/autocomplete-preset-algolia" "1.2.0"
+    "@algolia/autocomplete-shared" "1.2.0"
+    preact "^10.0.0"
+
+"@algolia/autocomplete-preset-algolia@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.2.0.tgz#4400c667dc080d369440b2fefb14225197b28e78"
+  integrity sha512-Xzxcyf62jMWOoC54tKGN+l1dB6JH4Mt28LLIljvtPaoaRYKfZnpnFH2xAxyyRSbSEsBRG0pPAh2EHJjkXf4Dzw==
+  dependencies:
+    "@algolia/autocomplete-shared" "1.2.0"
+
+"@algolia/autocomplete-shared@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.2.0.tgz#17534b402b89270b95a0d7655d4f91d626e8211b"
+  integrity sha512-Xsy7kYRaGSzLTiSFC4Og3MBrsZwiofi1XJRbdy+a4K517vZqoMBl3R/1NlUlfsqvY39aNAhBkH3lLK3J8mkTEw==
+
 "@algolia/cache-browser-local-storage@4.10.2":
   version "4.10.2"
   resolved "https://registry.yarnpkg.com/@algolia/cache-browser-local-storage/-/cache-browser-local-storage-4.10.2.tgz#9925c7c0ce94257564b8948b60fc427c4a98124c"
@@ -1329,6 +1358,16 @@
   integrity sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
   dependencies:
     "@hapi/hoek" "^8.3.0"
+
+"@headlessui/react@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.3.0.tgz#62287c92604923e5dfb394483e5ec2463e1baea6"
+  integrity sha512-2gqTO6BQ3Jr8vDX1B67n1gl6MGKTt6DBmR+H0qxwj0gTMnR2+Qpktj8alRWxsZBODyOiBb77QSQpE/6gG3MX4Q==
+
+"@heroicons/react@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-1.0.1.tgz#66d25f6441920bd5c2146ea27fd33995885452dd"
+  integrity sha512-uikw2gKCmqnvjVxitecWfFLMOKyL9BTFcU4VM3hHj9OMwpkCr5Ke+MRMyY2/aQVmsYs4VTq7NCFX05MYwAHi3g==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -4366,6 +4405,11 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
+
+date-fns@^2.22.1:
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.22.1.tgz#1e5af959831ebb1d82992bf67b765052d8f0efc4"
+  integrity sha512-yUFPQjrxEmIsMqlHhAhmxkuH769baF21Kk+nZwZGyrMoyLA+LugaQtC0+Tqf9CBUUULWwUJt6Q5ySI3LJDDCGg==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
@@ -7504,6 +7548,11 @@ levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+libphonenumber-js@^1.9.21:
+  version "1.9.21"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.21.tgz#ae7ce30d68a4b697024287e108f391f3938e8b1e"
+  integrity sha512-hMt+UTcXjRj7ETZBCxdPSw362Lq16Drf4R9vYgw19WoJLLpi/gMwseW62tevBKfF3pfXfr5rNnbc/hSl7XgWnQ==
 
 lilconfig@^2.0.3:
   version "2.0.3"
