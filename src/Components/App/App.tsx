@@ -12,14 +12,14 @@ function App() {
         <Logo className={'w-2/10'} />
       </header>
 
-      {/*<div className={'flex h-full w-full bg-red-50'}>
+      <div className={'flex h-full w-full bg-red-50'}>
         <div className={'flex flex-col w-1/4 bg-blue-50'}>
 
         </div>
         <div className={'flex flex-col w-full bg-green-50'}>
 
         </div>
-      </div>*/}
+      </div>
 
       </div>
   );
