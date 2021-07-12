@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="db45b0d3-4bdf-420a-ae46-feb3fce7b650" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AutocompletePlugins/mapbox_geocoding_plugin.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/loading.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/twilio-badge-red.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutocompletePlugins/query_suggestion_plugin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutocompletePlugins/query_suggestion_plugin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BopisSelector/BopisSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BopisSelector/BopisSelector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Map/Map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Map/Map.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/marker.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/marker.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1uf0G5lxCWJemb7ivwhKck8CFO4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/AutocompletePlugins" />
+      <recent name="$PROJECT_DIR$/src/Components" />
+      <recent name="$PROJECT_DIR$/src/lib" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/Header" />
+      <recent name="$PROJECT_DIR$/src/Components/App" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db45b0d3-4bdf-420a-ae46-feb3fce7b650" name="Default Changelist" comment="" />
+      <created>1625041237549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625041237549</updated>
+      <workItem from="1625041242201" duration="2199000" />
+      <workItem from="1625052078359" duration="1025000" />
+      <workItem from="1625065909038" duration="7361000" />
+      <workItem from="1625130572060" duration="21267000" />
+      <workItem from="1625220012718" duration="5000" />
+      <workItem from="1625668003012" duration="3715000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
