@@ -8,7 +8,7 @@ import {LngLat} from "../../types/LngLat";
 import {ReactComponent as MarkerUnselected} from "../../assets/marker.svg";
 import {ReactComponent as MarkerSelected} from "../../assets/marker-selected.svg";
 import SearchAsMoving from "./SearchAsMoving";
-import {comparePosition} from "../../lib/comparePosition";
+import {comparePosition} from "../../lib";
 
 
 interface MapState {

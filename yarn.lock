@@ -9,7 +9,7 @@
   dependencies:
     "@algolia/autocomplete-shared" "1.2.0"
 
-"@algolia/autocomplete-js@^1.2.0":
+"@algolia/autocomplete-js@1.2.0", "@algolia/autocomplete-js@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@algolia/autocomplete-js/-/autocomplete-js-1.2.0.tgz#78246f76463c2d7b79f905272432bd2a6a8bcc49"
   integrity sha512-OjPWGjjKs0brdYhBYPq+Qg71sXRIOFCjTruBDJspEb/0GNLZGB1gRKVWmWbpuZd+XDRSqFDpJnew6H1U/sOyaQ==
@@ -18,6 +18,16 @@
     "@algolia/autocomplete-preset-algolia" "1.2.0"
     "@algolia/autocomplete-shared" "1.2.0"
     preact "^10.0.0"
+
+"@algolia/autocomplete-plugin-query-suggestions@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-plugin-query-suggestions/-/autocomplete-plugin-query-suggestions-1.2.0.tgz#7acf8750873c7df85ef8a15e9e677b3d901abc1f"
+  integrity sha512-/ezWE39ZiR7HWmuAnUfkgV68OVOpeDCS3cAFhaX72TMgnOEFT556oeSLN7hBPnYOYEHbpUEloO8AfH4E5hdMMA==
+  dependencies:
+    "@algolia/autocomplete-core" "1.2.0"
+    "@algolia/autocomplete-js" "1.2.0"
+    "@algolia/autocomplete-preset-algolia" "1.2.0"
+    "@algolia/autocomplete-shared" "1.2.0"
 
 "@algolia/autocomplete-preset-algolia@1.2.0":
   version "1.2.0"
@@ -30,6 +40,11 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.2.0.tgz#17534b402b89270b95a0d7655d4f91d626e8211b"
   integrity sha512-Xsy7kYRaGSzLTiSFC4Og3MBrsZwiofi1XJRbdy+a4K517vZqoMBl3R/1NlUlfsqvY39aNAhBkH3lLK3J8mkTEw==
+
+"@algolia/autocomplete-theme-classic@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-theme-classic/-/autocomplete-theme-classic-1.2.0.tgz#71abada08b05d66387542738daee95b31f8a9cd4"
+  integrity sha512-y7fZipGRm8GvRBGxF7khneYXVXVYuIBGJmpzjw/y8rJ8Z/7TSzecO7kadMOHUsAiGYTtVWCaKgw9s3Ckb6T3nA==
 
 "@algolia/cache-browser-local-storage@4.10.2":
   version "4.10.2"
@@ -2047,6 +2062,11 @@
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
+
+"@types/qs@^6.9.6":
+  version "6.9.6"
+  resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.6.tgz#df9c3c8b31a247ec315e6996566be3171df4b3b1"
+  integrity sha512-0/HnwIfW4ki2D8L8c9GVcG5I72s9jP5GSLVF0VIXDW00kmIpA6O33G7a8n59Tmh7Nz0WUC3rSb7PTY/sdW2JzA==
 
 "@types/react-dom@^17.0.0":
   version "17.0.8"
@@ -9826,7 +9846,7 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
-qs@^6.5.1:
+qs@^6.10.1, qs@^6.5.1:
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.10.1.tgz#4931482fa8d647a5aab799c5271d2133b981fb6a"
   integrity sha512-M528Hph6wsSVOBiYUnGf+K/7w0hNshs/duGsNXPUCLH5XAqjEtiPGwNONLV0tBH8NoGb0mvD5JubnUTrujKDTg==

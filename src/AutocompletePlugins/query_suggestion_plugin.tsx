@@ -1,5 +1,6 @@
 import React from 'react';
 import { SearchClient } from 'algoliasearch/lite';
+//@ts-ignore
 import { createQuerySuggestionsPlugin } from '@algolia/autocomplete-plugin-query-suggestions';
 
 const createSuggestionsPlugin = (

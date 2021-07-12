@@ -8,17 +8,26 @@ import StoreComponent from "../StoreComponent/StoreComponent";
 import Header from "../Header/Header";
 import Map from "../Map/Map"
 import {LngLat} from "../../types/LngLat";
+import BopisSelector from "../BopisSelector/BopisSelector";
 
 
 function App() {
 
   const [currentStore, setCurrentStore] = useState<GeoHit | null>(null)
+  const [isOpen, setIsOpen] = useState(false)
+
 
 
   return (
     <div className="flex w-full h-full flex-col">
 
       <Header/>
+
+      {/* BOPIS Component */}
+      {currentStore ? <BopisSelector isOpen={isOpen} store={currentStore.name} onClose={() => {
+        setCurrentStore(null)
+        setIsOpen(false)
+      }}/> : null}
 
       <InstantSearch searchClient={searchClient} indexName={indexName}>
         <Configure

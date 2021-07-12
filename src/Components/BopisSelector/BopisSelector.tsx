@@ -1,6 +1,6 @@
 import React, {useState, Fragment, Component} from "react";
 import {addDays, addMinutes, format, formatISO, isToday} from 'date-fns'
-import {AsYouType, CountryCode, parsePhoneNumber} from "libphonenumber-js";
+import {CountryCode, parsePhoneNumber} from "libphonenumber-js";
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline';
 import {ReactComponent as TwilioBadge} from "../../assets/twilio-badge-red.svg";
@@ -74,7 +74,6 @@ class BopisSelector extends Component<IBopisProps, IBopisState> {
       </div>
     )
   }
-
   PhoneNumberInput() {
     return (
       <div>
