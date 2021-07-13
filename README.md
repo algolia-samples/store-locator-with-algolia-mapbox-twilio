@@ -32,7 +32,7 @@ The sample app implements the front-end in React, so you'll need nothing install
 git clone https://github.com/algolia-samples/store-locator-with-algolia-mapbox-twilio
 ```
 
-Copy the file `.local.env` to the directory 
+Copy the file `.local.env` to the directory and provide the right values 
 
 ```bash
 # TAKEN FROM YOUR ALGOLIA DASHBOARD 
@@ -51,15 +51,22 @@ REACT_APP_TWILIO_FUNCTION_URL=''
 
 `yarn dev`
 
+## Ressources 
+
+- 📺 Watch the video on Youtube : here
+- 📰 Read Blog post #1 : here
+- 📰 Read Blog post #2 : here
+- 📰 Read Blog post #3 : here
+
 
 
 ## Authors & Maintainers 
 
-| | Name | Twitter |
-| ---| --- | --- |
-|![](https://github.com/csauvage.png?size=30)| Clément SAUVAGE | [@clementsauvage](https://twitter.com/clementsauvage) |
-|![](https://github.com/seafoox.png?size=30)| Alexandre COLLIN | [@alexandrecollin](https://twitter.com/alexandrecollin) |
-|<img src="https://unavatar.vercel.app/twitter/juliereboul" width="30" height="30">| Julie REBOUL | [@juliereboul](https://twitter.com/juliereboul) |
+| | Name | Social links | |
+| ---| --- |  --- |  --- |
+|![](https://github.com/csauvage.png?size=30)| Clément SAUVAGE |  [Github](https://github.com/csauvage) - [Twitter](https://twitter.com/clementsauvage) |
+|![](https://github.com/seafoox.png?size=30)| Alexandre COLLIN | [Github](https://twitter.com/seafoox) - [Twitter](https://twitter.com/alexandrecollin) | ![](./git_assets/alg_icon.svg)
+|<img src="https://unavatar.vercel.app/twitter/juliereboul" width="30" height="30">| Julie REBOUL | [Twitter](https://twitter.com/juliereboul) | ![](./git_assets/alg_icon.svg)
 
 
 
