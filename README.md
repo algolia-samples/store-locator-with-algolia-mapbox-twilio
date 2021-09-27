@@ -53,10 +53,10 @@ REACT_APP_TWILIO_FUNCTION_URL=''
 
 ## Ressources 
 
-- 📺 Watch the video on Youtube : here
-- 📰 Read Blog post #1 : here
-- 📰 Read Blog post #2 : here
-- 📰 Read Blog post #3 : here
+- 📺 [Watch the livecoding on Youtube](https://discourse.algolia.com/t/building-a-store-locator-in-react-using-algolia-mapbox-and-twilio/12867/4?u=alex)
+- 📰 [Read Blog post #1](https://www.algolia.com/blog/engineering/building-a-store-locator-in-react-using-algolia-mapbox-and-twilio-part-1/)
+- 📰 [Read Blog post #2](https://www.algolia.com/blog/engineering/building-a-store-locator-in-react-using-algolia-mapbox-and-twilio-part-2)
+- 📰 Read Blog post #3 : soon
 
 
 
